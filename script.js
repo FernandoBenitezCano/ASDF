@@ -11,7 +11,7 @@ let divMain = document.getElementById("divMain");
 // Configurar la fecha objetivo del cumpleaños
 let goalYear = 2002; // Este es el año de nacimiento (irrelevante para la cuenta regresiva)
 let goalMonth = 7; // Agosto (índice basado en cero, así que 7 es agosto)
-let goalDay = 8; // Día del mes
+let goalDay = 28; // Día del mes
 
 // Obtener la fecha actual y inicializar la fecha de cumpleaños para el año actual
 let currentDate = new Date();
