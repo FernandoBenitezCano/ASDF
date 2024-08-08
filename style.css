@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,300&family=Varela+Round&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+	font-family: 'Varela Round';
+	color: rgb(2, 0, 11);
+	background-position: center;
+  	background-size: cover;
+  	min-height: 100vh;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: center;
+  	justify-content: center;
+  	padding: 20px;
+}
+
+h1{
+	font-size: 3rem;
+  margin: 30px 0;
+  text-align: center;
+  text-shadow: 2px 2px #000000;
+}
+
+.countdown-container{
+	display: flex;
+}
+
+.countdown-container div{
+	text-align: center;
+}
+
+.countdown-container p{
+	font-size: 2rem;
+	text-shadow: 2px 2px #000000;
+	margin: 0 5vw;
+}
+
+.countdown-container span{
+	font-size: 1rem;
+	text-shadow: 2px 2px #000000;
+}
+
+.hide{
+  display: none;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.wolf {
+  position: fixed;
+  animation: bajar 3s linear forwards;
+}
+
+@keyframes bajar {
+  from {
+    transform: translateY(100vh);
+  }
+  to {
+    transform: translateY(-75vh);
+  }
+}
+
+/* Estilo para el botón de "Ver Regalo" */
+#giftButton {
+  background-color: #ff6b6b;
+  color: #ffffff;
+  border: none;
+  padding: 15px 30px;
+  margin-left: 1%;
+  font-size: 1.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: 0; /* Asegura que el botón no tenga margen adicional */
+  display: block; /* Hace que el botón se comporte como un bloque */
+  align-self: center; /* Centra el botón dentro del contenedor principal */
+}
+
+#giftButton:hover {
+  background-color: #e55b5b;
+}
+
+/* Media Queries para hacer la página responsive */
+
+/* Móviles pequeños (320px - 480px) */
+@media (max-width: 480px) {
+  body {
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 2rem;
+    margin: 20px 0;
+  }
+
+  .countdown-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .countdown-container div {
+    margin-bottom: 20px;
+  }
+
+  .countdown-container p {
+    font-size: 2.5rem;
+  }
+
+  .countdown-container span {
+    font-size: 1.2rem;
+  }
+
+  #giftButton {
+    font-size: 1.2rem;
+    padding: 10px 20px;
+  }
+}
+
+/* Tabletas y pantallas medianas (481px - 768px) */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  .countdown-container {
+    padding: 15px;
+  }
+
+  .countdown-container p {
+    font-size: 2.8rem;
+  }
+
+  .countdown-container span {
+    font-size: 1.3rem;
+  }
+
+  #giftButton {
+    font-size: 1.3rem;
+    padding: 12px 25px;
+  }
+}
+
+/* Pantallas grandes (más de 768px) */
+@media (min-width: 769px) {
+  h1 {
+    font-size: 3.5rem;
+  }
+
+  .countdown-container {
+    padding: 25px;
+  }
+
+  .countdown-container p {
+    font-size: 3.5rem;
+  }
+
+  .countdown-container span {
+    font-size: 1.5rem;
+  }
+}
